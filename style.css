@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: all 0.2s ease;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: calc(2vmax + 12px);
+	padding: 3vmax;
+	font-family: "Roboto", sans-serif;
+	background-color: #010203;
+	color: #fff;
+	line-height: 1.6;
+	font-size: 16px;
+}
+
+.logo {
+	max-width: 200px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	font-size: calc(0.8vmax + 12px);
+	& > input {
+		padding: calc(1vmax + 8px) calc(2vmax + 16px);
+		font-size: calc(0.8vmax + 12px);
+		border: none;
+		border-radius: 30px;
+		background-color: rgba(255, 255, 255, 0.1);
+		color: #fff;
+		backdrop-filter: blur(50px);
+	}
+	& > button,
+	input[type="file"]::file-selector-button {
+		padding: calc(1vmax + 8px) calc(2vmax + 16px);
+		font-size: calc(0.8vmax + 12px);
+		border: none;
+		border-radius: 30px;
+		background-color: rgba(255, 255, 255, 0.1);
+		color: #fff;
+		backdrop-filter: blur(50px);
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+		background-color: #818cf833;
+		border: 1px solid #818cf8;
+		&:hover {
+			background-color: #818cf8;
+		}
+	}
+	& > input[type="file"]::file-selector-button {
+		padding: calc(0.5vmax + 8px);
+		margin-right: 1rem;
+	}
+}
+
+.collabLogo {
+	height: 60px;
+	width: 216px;
+	display: none;
+}

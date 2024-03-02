@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Cryonics - Figma Play Web Generator</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<img
+			src="assets/images/Cryonics Logo.png"
+			alt="Cryonics Logo"
+			class="logo"
+		/>
+		<form>
+			<label for="figmaLink">Client Company's Name:</label>
+			<input type="text" placeholder="Type Here..." id="companyName" />
+			<label for="figmaLink">Paste Figma Prototype Link:</label>
+			<input
+				type="text"
+				placeholder="{Fit To Screen} Prototype version..."
+				id="prototypeLink"
+			/>
+			<label for="clientLogo">Drop Client's Logo In The Box</label>
+			<input
+				type="file"
+				accept="image/*"
+				name="clientLogo"
+				id="clientLogo"
+			/>
+			<button onclick="createFigmaPlay()">Generate Figma Play</button>
+		</form>
+		<img
+			src="assets/images/cryonics collab logo.png"
+			alt="Cryonics Collab Logo"
+			class="collabLogo"
+			id="collabLogo"
+		/>
+		<script src="main.js"></script>
+	</body>
+</html>
