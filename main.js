@@ -2,6 +2,7 @@ let companyName = document.getElementById("companyName");
 let prototypeLink = document.getElementById("prototypeLink");
 let clientLogo = document.getElementById("clientLogo");
 let collabLogo = document.getElementById("collabLogo");
+let cryonicsLogo = document.getElementById("cryonicsLogo");
 
 var imageSrc = null;
 clientLogo.addEventListener("change", () => {
@@ -43,6 +44,11 @@ const createFigmaPlay = () => {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>${companyName.value} X Cryonics</title>
+		<link
+			rel="shortcut icon"
+			href="${cryonicsLogo.src}"
+			type="image/x-icon"
+		/>
         <meta property="og:title" content="Prototype UI for ${
 			companyName.value
 		} Application" />

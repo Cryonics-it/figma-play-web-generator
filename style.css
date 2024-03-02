@@ -60,7 +60,8 @@ form {
 	}
 }
 
-.collabLogo {
+.collabLogo,
+.cryonicsLogo {
 	height: 60px;
 	width: 216px;
 	display: none;
